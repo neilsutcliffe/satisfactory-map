@@ -1,0 +1,13 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalDecorators": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  }
+}
