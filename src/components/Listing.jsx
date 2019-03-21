@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-import { inject, observer } from 'mobx-react';
 
-@inject('defaultStore')
-@observer
 class Listing extends Component {
   render() {
-    const { defaultStore } = this.props;
-    const { list } = defaultStore;
-
+    const { list } = this.props;
     return (
       <ul>
         {list.map(item => (

@@ -19,4 +19,4 @@ class DefaultStore {
   };
 }
 
-export default new DefaultStore();
+export default DefaultStore;
