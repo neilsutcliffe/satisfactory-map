@@ -1,21 +1,15 @@
 import React, { Component } from 'react';
-import { inject, observer } from 'mobx-react';
-import Listing from './components/Listing';
 import 'normalize.css';
+import './style.css';
 import styles from './App.module.scss';
+import MapContainer from './MapContainer';
+import MarkerTypes from './MarkerTypes';
 
-@inject('defaultStore')
-@observer
-class App extends Component {
-  render() {
-    const { defaultStore } = this.props;
-    return (
-      <div className={styles.container}>
-        <h1>Default</h1>
-        <Listing list={defaultStore.list} />
-      </div>
-    );
-  }
+export default () => {
+  return (
+    <div className={styles.container}>
+      <MapContainer />
+      <MarkerTypes />
+    </div>
+  );
 }
-
-export default App;
