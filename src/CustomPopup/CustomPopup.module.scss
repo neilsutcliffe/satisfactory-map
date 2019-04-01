@@ -1,0 +1,63 @@
+@import '../colors.scss';
+
+.container
+{
+    background: #FAFAFA;
+    color: #333;
+    width: 250px;
+    overflow: hidden;
+
+    h4
+    {
+        margin: 0;
+        padding: 0.2em;
+        font-weight: bold;
+        font-family: 'Orbitron';
+        background-color: $brand;
+    }
+    
+    
+    .content
+    {
+        padding: 0.2em;
+    
+        h5, div
+        {
+            margin: 0;
+        }
+    
+        div
+        {
+            margin-left: 0.5em;
+        }
+
+        .form
+        {
+            margin: 5px;
+            border: 1px solid #AAA;
+            background-color: #DDD;
+            padding: 0px;
+            border-radius: 3px;
+
+            > *
+            {
+                display: block;
+                margin: 2px;
+                height: 20px;
+                line-height: 20px;
+                font-size: 12px;
+                padding: 2px 5px;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                border: 1px solid #999;
+                width: calc(100% - 4px)
+            }
+
+            > label
+            {
+                border: none;
+            }
+        }
+    }
+}

@@ -1,11 +1,14 @@
-html {
-  background-color: #333;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
+
+@import './colors.scss';
+
+:global(body)
+{
+  overflow: hidden;
 }
 
-.container {
-  max-width: 700px;
-  padding: 10px;
-  margin: auto;
+html {
+  background-color: #474747;
+  color: white;
+  font-family: $defaultFont;
 }
+

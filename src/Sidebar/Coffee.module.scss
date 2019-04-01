@@ -1,0 +1,13 @@
+@import '../colors.scss';
+
+.promo
+{
+    text-align: center;
+    font-family: $defaultFont;
+    margin-top: 1em;
+
+    a
+    {
+        color: $white;
+    }
+}

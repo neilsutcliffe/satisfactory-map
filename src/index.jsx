@@ -2,12 +2,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'mobx-react';
-import DefaultStore from './stores';
+import store from './store/store';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 const stores = {
-  defaultStore: new DefaultStore()
+  defaultStore: store
 };
 
 ReactDOM.render(

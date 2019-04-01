@@ -1,0 +1,196 @@
+@import '../colors.scss';
+
+.open
+{
+	position: absolute;
+	top: 50px;
+	right: 0;
+	height: 300px;
+	width: 50px;
+	background-color: $brand;
+	border-radius: 5px 0 0 5px;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	box-shadow: 0 0 5px 0px #000;
+
+	> span
+	{
+		transform: rotate(90deg);
+		white-space: nowrap;
+		display: block;
+		position: absolute;
+		overflow: visible;
+		top: 144px;
+		right: -100px;
+		width: 250px;
+		font-weight: bold;
+		pointer-events: none;
+		color: $white;
+
+		.count
+		{
+			font-weight: normal;
+			margin-left: 20px;
+			display: inline-block;
+		}
+	}
+
+	&:hover
+	{
+		background-color: $white;
+		span
+		{
+			color: $black;
+		}
+	}
+}
+
+
+
+.sidebar, .sidebarClosed
+{
+	transition: right 0.5s;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 300px;
+	background-color: #444;
+	box-shadow: 0 0 5px 0px #000;
+	z-index: 100;
+	max-height: 100vh;
+	overflow: scroll;
+	overflow-x: hidden;
+	font-family: 'Orbitron';
+	
+	.header h1
+	{
+		font-size: 22px;
+		padding: 0.3em;
+		margin: 0;
+		background-color: $brand;
+	}
+	
+	.header
+	{
+		position: relative;
+		overflow: hidden;
+	}
+
+	.icon
+	{
+		opacity: 0.1;
+		cursor: pointer;
+		height: 30px;
+		width: 30px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.table
+	{
+		width: 100%;
+
+		th
+		{
+			font-size: 12px;
+		}
+
+		td, th
+		{
+			padding: 0.3em;
+			width: 25%;
+		}
+
+		.icon
+		{
+			display: block;
+		}
+
+		.selected .icon
+		{
+			opacity: 1;
+		}
+	}
+
+
+	ul
+	{
+		list-style: none;
+		padding-left: 0;
+		margin: 0;
+		border-top: 1px solid black;
+
+		li
+		{
+			padding: 0;
+			border-bottom: 1px solid black;
+			cursor: pointer;
+		
+			.markerLabel
+			{
+				display: inline-block;
+				padding: 0;
+				padding-top: 15px;
+				padding-bottom: 8px;
+			}
+		
+			.icon
+			{
+				margin: -5px 5px 0 5px;
+				float: left;
+				margin-right: 20px;
+			}
+		
+			&.enabled
+			{
+				background-color: #AAA;
+				color: black;
+		
+				.icon
+				{
+					opacity: 1;
+				}
+			}
+			
+		}
+	}
+}
+
+
+.sidebarClosed
+{
+	right: -300px;
+}
+
+.contributors
+{
+	text-align: center;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+.json
+{
+	 font-family: 'Open Sans', sans-serif;
+	 text-transform: uppercase;
+	margin: 0 auto;
+	text-align: center;
+	width: calc(100% - 20px);
+	margin: 10px;
+	border-radius: 5px;
+	border-style: none;
+	padding: 0.5em;
+	cursor: pointer;
+
+	&:hover
+	{
+		background-color: $white;
+	}
+}
+
+.json + .json
+{
+	margin-top: 0;
+}

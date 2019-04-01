@@ -1,0 +1,18 @@
+{
+    "starting": [
+        "node-coal-pure",
+        "node-coal-normal",
+        "node-iron-pure",
+        "node-copper-pure",
+        "node-limestone-pure",
+        "node-oil-pure",
+        "node-oil-normal",
+        "node-beauxite-normal",
+        "node-beauxite-pure",
+        "node-caterium-normal",
+        "node-caterium-pure",
+        "crash",
+        "geysers",
+        "user"
+    ]
+}
